@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Expandable Search Form with CSS3</h1>
+        <label class="h3">Demo On Click</label>
+        <div> </div>
+        <input type="text" class="search-focus" name="" placeholder="search here...">
+        <div> </div>
+        <label class="h3">Demo On Hover</label>
+        <div> </div>
+        <input type="text" class="search-hover" name="" placeholder="search here...">
+        <div> </div>
+    </div>
+    <style>
+        body {
+            background: radial-gradient(#80b1d6, #0e83cd) no-repeat;
+            color: #fff;
+            height: 100vh;
+        }
+        
+        section {
+            padding: 5em;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: #fff;
+        }
+        
+         ::-moz-placeholder {
+            color: #fff;
+        }
+        
+        .search-focus {
+            background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat left;
+            border: 1px solid #ccc;
+            outline: none;
+            background-size: 22px;
+            background-position: 13px;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            padding: 25px;
+            transition: all .5s;
+        }
+        
+        .search-focus:focus {
+            width: 300px;
+            padding-left: 50px;
+        }
+        
+        .search-hover {
+            background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat left;
+            border: 1px solid #ccc;
+            outline: none;
+            background-size: 22px;
+            background-position: 13px;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            padding: 25px;
+            transition: all .5s;
+        }
+        
+        .search-hover:hover {
+            width: 300px;
+            padding-left: 50px;
+        }
+        
+        .search-click {
+            position: relative;
+            overflow: hidden;
+            height: 50px;
+        }
+        
+        .search-click input {
+            background: transparent;
+            border: 1px solid #ccc;
+            outline: none;
+            position: absolute;
+            width: 300px;
+            height: 50px;
+            left: 0%;
+            padding: 10px;
+        }
+    </style>
+
+
+
+
+
+
+    <br><br><br><br><br><br>
+
+
+    <div class="search-box">
+        <input type="text" class="input-search" id="input-search" name="" placeholder="Recherche ...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <style>
+        .search-box {
+            width: 50px;
+            height: 47px;
+        }
+        
+        .search-box .input-search {
+            position: absolute;
+            border: none;
+            outline: none;
+            float: left;
+            padding: 20px;
+            color: #183a6e;
+            font-size: 16px;
+            transition: all 0.4s;
+            width: 50px;
+            border-radius: 50px;
+            height: 47px;
+        }
+        
+        button {
+            position: absolute;
+            color: #eb0000;
+            float: left;
+            width: 40px;
+            height: 38px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            margin-top: 4px;
+            margin-left: 5px;
+            background: #fff;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        
+        .search-box:hover .input-search {
+            width: 360px;
+            padding: 10px 15px 10px 50px;
+            border: 1px solid #ea0000;
+        }
+        
+        .input-search:focus {
+            width: 360px;
+            padding: 10px 15px 10px 50px;
+            border: 1px solid #ea0000;
+        }
+        
+        .search-box:focus-within button {
+            background-color: #ea0000;
+            color: #fff;
+        }
+        
+        .search-box:hover button {
+            background-color: #ea0000;
+            color: #fff;
+        }
+    </style>
+    <br><br><br><br>
+    <br><br><br><br>
+
+    <div class="search">
+        <form>
+            <input type="text" class="form-control" maxlength="64" placeholder="Recherche..." id="searchinput" />
+            <button type="submit" class="btn-recherche"><i class=" fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <button id="searchclear" class="btn-fermer-recherche"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <br><br><br><br>
+    <br><br><br><br>
+
+
+
+    <style>
+        .search {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .search input {
+            position: absolute;
+            -webkit-transition: all 0.7s ease-in-out;
+            -moz-transition: all 0.7s ease-in-out;
+            -o-transition: all 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out;
+            border: none;
+            outline: none;
+            color: #183a6e;
+            font-size: 16px;
+            transition: all 0.4s;
+            width: 50px;
+            border-radius: 50px;
+            height: 50px;
+        }
+        
+        .search:hover input,
+        .search input:focus {
+            width: 340px;
+            padding: 10px 10px 10px 55px;
+            box-shadow: 0px 0px 0px 4px #1976d254;
+        }
+        
+        .search:hover .btn-recherche,
+        .search:focus-within .btn-recherche {
+            background: #1976D2;
+            color: #fff;
+        }
+        
+        .btn-recherche {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            margin: 5px;
+            color: #fff;
+            background: #ea0000;
+        }
+        
+        .btn-fermer-recherche {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            color: #ea0000;
+            margin: 5px 0px 0px 294px;
+            opacity: 0;
+        }
+        
+        .search:hover .btn-fermer-recherche {
+            opacity: 1;
+            transition: all 2s;
+        }
+    </style>
+
+
+
+    <div class="recherche" id="recherche">
+
+        <form>
+            <input type="text" class="form-control search" maxlength="64" placeholder="Recherche..." id="searchinput" />
+            <button type="submit" class="btn-recherche"><i class=" fa fa-search" aria-hidden="true"></i></button>
+            <span><i class="fa fa-times" aria-hidden="true"></i></span>
+
+        </form>
+    </div>
+    <div class="fairerecherche">
+        <form>
+            <input type="text" class="form-control search" maxlength="64" placeholder="Recherche..." id="searchinput" />
+            <button type="submit" class="btn-recherche"><i class=" fa fa-search" aria-hidden="true"></i></button>
+            <span><i class="fa fa-times" aria-hidden="true"></i></span>
+
+        </form>
+
+    </div>
+    <br><br><br><br>
+    <br><br><br><br>
+
+
+    <style>
+        .fairerecherche {
+            width: 500px;
+            height: 150px;
+            padding: 50px;
+            margin: 50px;
+            background: #0ff;
+        }
+        
+        .recherche {
+            width: 600px;
+            height: 500px;
+            background: indigo;
+            padding: 100px;
+        }
+        
+        form {
+            background: khaki;
+            width: 400px;
+            height: 100px;
+        }
+        
+        .recherche input {
+            position: absolute;
+            -webkit-transition: all 0.7s ease-in-out;
+            -moz-transition: all 0.7s ease-in-out;
+            -o-transition: all 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out;
+            border: none;
+            outline: none;
+            color: #183a6e;
+            font-size: 16px;
+            transition: all 0.4s;
+            width: 50px;
+            border-radius: 50px;
+            height: 50px;
+        }
+        
+        .recherche span i {
+            position: relative;
+            color: #fff;
+            background: red;
+            cursor: pointer;
+            border-radius: 50px;
+            border: 1px solid red;
+            width: 40px;
+            height: 40px;
+            padding: 13px 0px 0px 13px;
+            margin: -10px 0px 0px 400px;
+        }
+        /* .search {
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            border: 5px solid #fff;
+            border-radius: 100px;
+            transition: .7s;
+            transition-timing-function: cubic-bezier(1, -0.5, 0, 1.5);
+            text-align: left;
+            box-sizing: border-box;
+            padding-left: 15px;
+            outline: none;
+            font-size: 32px;
+        } */
+        /*   .recherche:hover input,
+        .recherche input:focus {
+            width: 340px;
+            padding: 10px 10px 10px 55px;
+            box-shadow: 0px 0px 0px 4px #1976d254;
+        } */
+        
+        .recherche:hover .btn-recherche,
+        .recherche:focus-within .btn-recherche {
+            background: #1976D2;
+            color: #fff;
+        }
+        
+        .btn-recherche {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            margin: 5px;
+            color: #fff;
+            background: #ea0000;
+        }
+        
+        .btn-fermer-recherche {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            color: #ea0000;
+            margin: 5px 0px 0px 294px;
+            opacity: 0;
+        }
+        
+        .recherche:hover .btn-fermer-recherche {
+            opacity: 1;
+            transition: all 2s;
+        }
+        
+        .active {
+            width: 340px;
+            height: 60px;
+            border: 5px solid #fff;
+            border-radius: 25px;
+        }
+    </style>
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+
+
+    <script>
+        $("#searchclear").click(function() {
+
+            $("#searchinput").val('');
+
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            /*   $('.recherche').click(function() {
+                  $('.search').addClass('active');
+
+              }); */
+
+            $('.fairerecherche').hover(function() {
+                $('.search').addClass('active');
+
+            });
+
+            $('.fa-times').click(function() {
+                $('.search').removeClass('active');
+                // $('.search').removeClass('active').val('');
+
+
+
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

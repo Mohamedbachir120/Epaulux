@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EPAULUX</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/googlefont.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="profiladmin">
+
+        <nav class="navadmin fixed-top">
+            <a class="sidebar-logo" href="index.html"> <img src="img/logoapropos.PNG" alt=""></a>
+
+            <button class="btn sidebar-admin-toggle"><i class="fa fa-bars"></i></button>
+
+            <ul>
+
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="profilclient.html">Mon Profil</a></li>
+
+            </ul>
+
+            <form class="searchbox" id="serch-box">
+                <input type="text" class="form-control" id="searchinput" maxlength="64" placeholder="Recherche..." />
+                <span id="searchclear" class="btn-fermer-recherche"><i class="fa fa-times" aria-hidden="true"></i></span>
+                <button type="submit"><i class=" fa fa-search" aria-hidden="true"></i></button>
+            </form>
+
+            <button type="button" class="deconnect">Se déconnecter</button>
+        </nav>
+
+
+
+
+        <div class="profiladmin-contenu">
+
+
+            <div class="sidebar-admin">
+                <ul>
+                    <li><a href="#">Les commandes<i class="fa fa-shopping-cart"></i></a></li>
+                    <li> <a href="#">Statistique de commandes<i class="fa fa-line-chart"></i></a></li>
+
+                    <li class="menu">
+                        <a href="#">Mes Produits<i class="fa fa-shopping-bag"></i></a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Afficher mes Produits</a></li>
+                            <li><a href="#">Afficher les modèles</a></li>
+                            <li><a href="#">Afficher les références</a></li>
+                            <li><a href="#">Ajouter un modèles</a></li>
+                            <li><a href="#">Afficher une référence</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Afficher les utilisateurs<i class="fa fa-user"></i></a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Les Administrateurs</i></a></li>
+                            <li><a href="#">Les clients</i></a></li>
+                            <li><a href="#">Créer un administrateurs</i></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Mon profil<i class="fa fa-cog"></i></a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Informations Personnelles<i class="fa fa-info"></i></a></li>
+                            <li><a href="#">Mot de passe<i class="fa fa-lock"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contenu">
+                <h1>Simple Sidebar .........</h1>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+
+</html>
+
+<script>
+    $(".sidebar-admin-toggle").click(function(e) {
+        e.preventDefault();
+        $(".profiladmin").toggleClass("toggled");
+    });
+</script>
+
+
+
+
+<style>
+    .profiladmin {
+        width: 100%;
+        height: 92vh;
+        margin-top: -1%;
+        /*  background-image: url("img/profilclient.jpg");
+        background-position-y: 75%;
+        background-repeat: no-repeat;
+        background-size: cover; */
+        background: #28c9ea;
+    }
+    
+    .navadmin {
+        background: #021e4e;
+        width: 100%;
+        height: 10vh;
+        padding: 0.6% 2% 0.6% 5%;
+        z-index: 1030;
+        display: flex;
+    }
+    
+    .navadmin a img {
+        width: 32%;
+        height: 8vh;
+        box-shadow: 0px 0px 7px 2px skyblue;
+        margin-left: -9%;
+        border-radius: 10px 10px 0px;
+    }
+    
+    .navadmin .sidebar-admin-toggle {
+        width: 4.5%;
+        height: 6.5vh;
+        margin-top: 0.3%;
+        padding: 0% 0% 3% 0%;
+        margin-left: -18%;
+        border: none;
+        outline: none;
+        font-size: 200%;
+        color: white;
+    }
+    
+    .navadmin .sidebar-admin-toggle:hover,
+    .navadmin .sidebar-admin-toggle:focus {
+        background: white;
+        color: #021e4e;
+    }
+    
+    .navadmin ul {
+        display: flex;
+        list-style: none;
+        width: 40%;
+        height: 7vh;
+        padding-top: 0.5%;
+    }
+    
+    .navadmin ul li {
+        padding: 2%;
+        font-size: 17px;
+        margin-right: 5%;
+        width: 28%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .navadmin ul li:first-child {
+        margin-right: 2%;
+    }
+    
+    .navadmin ul li:hover {
+        transform: scale(1.2);
+        box-shadow: inset 0px 0px 20px 2px skyblue;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .navadmin ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .navadmin .searchbox {
+        width: 2.8%;
+        height: 5.3vh;
+        margin-top: 0.85%;
+    }
+    
+    .navadmin .searchbox input {
+        width: 2.3%;
+        height: 5.3vh;
+        position: absolute;
+        border: none;
+        outline: none;
+        padding: 8px 10px 10px 40px;
+        color: #183a6e;
+        font-size: 16px;
+        border-radius: 50px;
+        background: none;
+        transition: all 0.4s;
+    }
+    
+    .navadmin .searchbox button {
+        position: absolute;
+        width: 2.4%;
+        height: 5vh;
+        margin-top: 1px;
+        margin-left: 2px;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        color: #fff;
+        background: #ea0000;
+    }
+    
+    .navadmin .searchbox .btn-fermer-recherche {
+        position: absolute;
+        color: #ea0000;
+        font-size: 20px;
+        margin-left: 24.5%;
+        margin-top: 0.2%;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .navadmin .searchbox:hover input,
+    .navadmin .searchbox input:focus {
+        width: 26.5%;
+        box-shadow: 0px 0px 0px 4px #1976d254;
+        background: #fff;
+    }
+    
+    .navadmin .searchbox:hover button,
+    .navadmin .searchbox:focus-within button {
+        background: #1976D2;
+        color: #fff;
+    }
+    
+    .navadmin .searchbox:hover .btn-fermer-recherche {
+        opacity: 1;
+        transition: all 2s;
+    }
+    
+    .navadmin .deconnect {
+        border: none;
+        outline: none;
+        font-size: 20px;
+        width: 17%;
+        padding: 1% 2%;
+        border-radius: 10px;
+        color: white;
+        background: #dd0c0c;
+        margin-left: 35%;
+    }
+    
+    .navadmin .deconnect:hover {
+        transform: scale(1.2);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .profiladmin-contenu {
+        margin-top: 4.8%;
+        display: flex;
+    }
+    
+    .profiladmin-contenu .sidebar-admin {
+        width: 20%;
+        min-height: 92vh;
+        background: #021e4e66;
+        transition: margin .25s ease-out;
+        padding-top: 1%;
+    }
+    
+    .sidebar-admin ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: -13%;
+    }
+    
+    .sidebar-admin ul li {
+        padding: 5% 0% 4% 5%;
+        height: 8vh;
+    }
+    
+    .sidebar-admin ul li:hover {
+        background: #28c9ea;
+    }
+    
+    .sidebar-admin ul li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .sidebar-admin ul li:first-child a i {
+        margin-left: 38%;
+    }
+    
+    .sidebar-admin ul li:nth-child(2) a i {
+        margin-left: 7%;
+    }
+    
+    .sidebar-admin ul li:nth-child(3) a i {
+        margin-left: 48%;
+    }
+    
+    .sidebar-admin ul li:nth-child(4) a i {
+        margin-left: 20%;
+    }
+    
+    .sidebar-admin ul li:nth-child(5) a i {
+        margin-left: 57%;
+    }
+    
+    .sidebar-admin ul li:nth-child(5) ul li:first-child a i {
+        margin-left: 9%;
+    }
+    
+    .sidebar-admin ul li:nth-child(5) ul li:nth-child(2) a i {
+        margin-left: 47%;
+    }
+    
+    .sidebar-admin ul li ul.sousmenu {
+        display: none;
+        background: none;
+        margin-top: 4%;
+        margin-left: -16%;
+        padding-left: 13%;
+    }
+    
+    .sidebar-admin ul li ul.sousmenu li {
+        margin-left: -3%;
+        padding-left: 9%;
+    }
+    
+    .sidebar-admin ul li.menu:nth-child(3):hover {
+        margin-bottom: 95%;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .sidebar-admin ul li.menu:nth-child(4):hover {
+        margin-bottom: 58%;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .sidebar-admin ul li.menu:hover ul.sousmenu {
+        display: block;
+        transition: all 2s ease-in-out;
+    }
+    
+    .profiladmin.toggled .profiladmin-contenu .sidebar-admin {
+        margin-left: 0;
+    }
+    
+    .profiladmin-contenu .contenu {
+        width: 80%;
+        padding: 2%;
+    }
+    
+    @media (min-width: 768px) {
+        .profiladmin-contenu .sidebar-admin {
+            margin-left: 0;
+        }
+        .profiladmin-contenu {
+            min-width: 0;
+            width: 100%;
+        }
+        .profiladmin.toggled .profiladmin-contenu .sidebar-admin {
+            margin-left: -17%;
+        }
+        .profiladmin.toggled .profiladmin-contenu .sidebar-admin:hover,
+        .profiladmin.toggled .profiladmin-contenu .sidebar-admin:focus {
+            margin-left: 0;
+        }
+    }
+</style>

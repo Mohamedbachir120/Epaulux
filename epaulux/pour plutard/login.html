@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="bg-image kenburns-top"></div>
+
+    <div class="box">
+
+
+        <h2>Se connecter</h2>
+        <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X</i></span></button>
+        <form>
+
+            <div class="inputbox">
+
+                <input type="text" required="" name=""><span class="fas fa-envelope"></span>
+                <label>Username</label>
+
+            </div>
+
+            <div class="inputbox">
+
+                <input type="password" required="" name=""><span class="fas fa-lock"></span>
+                <label>Mot de passe</label>
+
+            </div>
+
+            <button type="submit" name="" value="submit" class="btn shadow-drop-2-center">Se connecter</button>
+
+        </form>
+
+
+
+    </div>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            /* The image used */
+            background-image: url("img/machine/1m.jpg");
+            /* Add the blur effect */
+            filter: blur(1px);
+            /*   -webkit-filter: blur(1px);
+ */
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 40px;
+            background: #070648f5;
+            box-sizing: border-box;
+            z-index: 2;
+            border-radius: 35px;
+            box-shadow: 1px 1px 50px 30px #b2d6ff;
+        }
+        
+        .box h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: #b2d6ff;
+            text-align: center;
+            text-shadow: 0 0 18px #b2d6ff;
+        }
+        
+        .box button.close {
+            margin-top: -96px;
+            margin-left: 314px;
+            padding: 10px;
+            padding-top: 5px;
+            position: absolute;
+            font-size: 23px;
+            text-shadow: 0px 0px 0px transparent;
+            color: #ff0707;
+            background-color: transparent;
+            height: 33px;
+        }
+        
+        .box button.close:hover {
+            border-radius: 50%;
+            border: none;
+            color: #fff;
+            background: #ff0707;
+            box-shadow: 1px 1px 25px 0px #ff0707;
+        }
+        
+        .box .inputbox {
+            position: relative;
+        }
+        
+        .box .inputbox input {
+            width: 100%;
+            padding: 10px 0px;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1px solid #fff;
+            letter-spacing: 1px;
+        }
+        
+        .box .inputbox label {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #b2d6ff;
+            pointer-events: none;
+            transition: .5s;
+        }
+        
+        .box .inputbox input:hover~label,
+        .box .inputbox input:valid~label {
+            top: -18px;
+            left: 0px;
+            color: #b2d6ff;
+            font-size: 12px;
+        }
+        
+        .box .btn {
+            border: none;
+            outline: none;
+            background: #b2d6ff;
+            color: #070648f5;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            float: right;
+        }
+        
+        .box .btn:hover {
+            /*     border:1px solid #070648f5;
+ */
+            box-shadow: 1px 1px 25px 10px #b2d6ff;
+        }
+        
+        .fa-envelope,
+        .fa-lock {
+            position: absolute;
+            top: 20px;
+            right: 1px;
+            color: #b2d6ff;
+        }
+        
+        .kenburns-top {
+            -webkit-animation: kenburns-top 40s ease-out infinite both;
+            animation: kenburns-top 40s ease-out infinite both;
+        }
+        
+        @-webkit-keyframes kenburns-top {
+            0% {
+                -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+                -webkit-transform-origin: 50% 16%;
+                transform-origin: 50% 16%;
+            }
+            100% {
+                -webkit-transform: scale(1.25) translateY(-15px);
+                transform: scale(1.25) translateY(-15px);
+                -webkit-transform-origin: top;
+                transform-origin: top;
+            }
+        }
+        
+        @keyframes kenburns-top {
+            0% {
+                -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+                -webkit-transform-origin: 50% 16%;
+                transform-origin: 50% 16%;
+            }
+            100% {
+                -webkit-transform: scale(1.25) translateY(-15px);
+                transform: scale(1.25) translateY(-15px);
+                -webkit-transform-origin: top;
+                transform-origin: top;
+            }
+        }
+        
+        .shadow-drop-2-center:hover {
+            -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        
+        @-webkit-keyframes shadow-drop-2-center {
+            0% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-box-shadow: 0 0 0 0 #b2d6ff;
+                box-shadow: 0 0 0 0 #b2d6ff;
+            }
+            100% {
+                -webkit-transform: translateZ(50px);
+                transform: translateZ(50px);
+                -webkit-box-shadow: 0 0 20px 0px #b2d6ff;
+                box-shadow: 0 0 20px 0px #b2d6ff;
+            }
+        }
+        
+        @keyframes shadow-drop-2-center {
+            0% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-box-shadow: 0 0 0 0 #b2d6ff;
+                box-shadow: 0 0 0 0 #b2d6ff;
+            }
+            100% {
+                -webkit-transform: translateZ(50px);
+                transform: translateZ(50px);
+                -webkit-box-shadow: 0 0 20px 0px #b2d6ff;
+                box-shadow: 0 0 20px 0px #b2d6ff;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>

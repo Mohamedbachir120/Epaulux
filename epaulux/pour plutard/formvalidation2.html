@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navcreationcompte fixed-top">
+        <a href="index.php"><img src="../img/logomotdepasseoublie.png" alt=""></a>
+    </nav>
+    <div class="containercreationcompte">
+
+        <div class="header">
+            <h2>Bienvenue !</h2>
+        </div>
+        <br>
+
+        <form action="" class="form" id="form">
+
+            <div class="row">
+
+                <div class="part1 col-5">
+
+                    <h4>Informations personelles</h4>
+
+                    <!-- 
+                    <div class="f-control ">
+                        <label>Nom</label>
+                        <input type="text" class="form-control " placeholder="Votre nom" id="nom">
+                        <span><i class="fas fa-user" aria-hidden="true"></i></span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="f-control ">
+                        <label>Prénom</label>
+                        <input type="text" class="form-control" placeholder="Votre Prénom" id="prenom">
+                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="f-control ">
+                        <label>Téléphone</label>
+                        <input type="text" class="form-control" maxlength="10" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" placeholder="Votre numéro de téléphone" id="tel">
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+
+                    </div>
+
+                    <div class="f-control ">
+
+
+                        <label>Adresse</label>
+                        <input type="text" class="form-control" placeholder="Votre adresse" id="adresse">
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+
+
+                    </div>
+ -->
+                    <div class="f-control ">
+
+
+                        <label>E-mail</label><br>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre e-mail" id="emailcreationcompte">
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <i class="fa fa-check-circle fa-check-circle-email"></i>
+                            <i class="fa fa-exclamation-circle fa-exclamation-circle-email"></i>
+                            <small>Error message</small>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="vl"></div>
+
+                <div class="part2 col-5">
+                    <h4>Compte</h4>
+                    <!-- 
+                    <div class="f-control  ">
+
+                        <label>Nom d'utilisateur</label>
+                        <input type="email" class="form-control" placeholder="Ex: nomprénom@epaulux.dz" id="nomutilisateur">
+                        <span><i class="fas fa-user" aria-hidden="true"></i></span><i class="fa fa-check-circle"></i>
+                        <p id="emailhelp" class="form-text text-muted">Tous doit etre en minuscule</p>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+
+
+                    </div>
+
+                    <div class="f-control  ">
+
+                        <label>Mot de passe</label>
+                        <input type="password" class="form-control passwordcreationcompte" minlength="5" placeholder="Mot de passe" id="passwordcreationcompte">
+                        <span><i class="fa fa-eye" id="seepasswordcreationcompte" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-eye-slash" id="hidepasswordcreationcompte" aria-hidden="true"></i></span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="f-control ">
+                        <label>Confirmer votre mot de passe</label>
+                        <input type="password" class="form-control passwordcreationcomptecheck" minlength="5" placeholder="Confirmez votre mot de passe" id="passwordcreationcomptecheck">
+                        <span><i class="fa fa-eye" id="seepasswordcreationcomptecheck" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-eye-slash" id="hidepasswordcreationcomptecheck" aria-hidden="true"></i></span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+ -->
+                    <br><br><br>
+                    <button type="submit" class="btn btnvalidation rounded-pill col-3">submit</button>
+
+        </form>
+        </div>
+
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+        <style>
+            .navcreationcompte {
+                height: 70px;
+                background: -webkit-linear-gradient(top, #b3d1ff, #ffffff);
+            }
+            
+            .navcreationcompte a img {
+                height: 65px;
+                margin-top: -5px;
+                margin-left: 465px;
+                border-radius: 25px;
+            }
+            
+            .navcreationcompte a img:hover {
+                box-shadow: 0px 0px 60px 10px red;
+            }
+            
+            .containercreationcompte {
+                padding: 1px 20px 20px 20px;
+            }
+            
+            .header {
+                margin-top: 100px;
+                padding: 20px 40px;
+                border-radius: 15px 15px 0px 0px;
+                border: 2px solid lightblue;
+                border-bottom: none;
+                background: linear-gradient(45deg, #add8e66b, #fff);
+            }
+            
+            .header h2,
+            .form .f-control label {
+                color: #0a2d63;
+            }
+            
+            .form {
+                padding: 30px 40px;
+                background: lightblue;
+                margin-top: -24px;
+                border-radius: 0px 0px 15px 15px;
+                border: 2px solid lightblue;
+                border-top: none;
+            }
+            
+            .form .row .part1 {
+                margin-right: 90px;
+            }
+            
+            .form .row .part2 {
+                margin-left: 90px;
+            }
+            
+            .form .row h4 {
+                text-align: center;
+                padding-bottom: 40px;
+                color: #0a2d63;
+            }
+            
+            .form .row .part2 .f-control p#emailhelp {
+                margin-bottom: -10px;
+                font-size: 13px;
+            }
+            
+            .f-control {
+                margin-bottom: 10px;
+                padding-bottom: 20px;
+                position: relative;
+            }
+            
+            .f-control input {
+                border: 2px solid #f0f0f0;
+                border-radius: 4px;
+                padding: 10px;
+                width: 100%;
+                font-size: 14px;
+            }
+            /* 
+            .f-control span {
+                position: absolute;
+                right: -30px;
+                top: 0px;
+                color: #0b2f64;
+            } */
+            
+            .f-control span i {
+                position: absolute;
+                right: 2px;
+                top: 34px;
+                color: #0b2f64;
+                background: #EEEEEE;
+                padding: 6px 7px 9px 7px;
+                border-left: 1px solid #0b2f64;
+            }
+            
+            .f-control.success input {
+                border-color: #2ecc71;
+            }
+            
+            .f-control.error input {
+                border-color: #e74c3c;
+            }
+            
+            .f-control.success span i {
+                color: #2ecc71;
+                border-color: #2ecc71;
+            }
+            
+            .f-control.error span i {
+                color: #e74c3c;
+                border-color: #e74c3c;
+            }
+            
+            .f-control i.fa-check-circle,
+            i.fa-exclamation-circle {
+                position: absolute;
+                top: 40px;
+                right: 50px;
+                visibility: hidden;
+            }
+            
+            .f-control.success i.fa-check-circle {
+                color: #2ecc71;
+                visibility: visible;
+            }
+            
+            .f-control.error i.fa-exclamation-circle {
+                color: #e74c3c;
+                visibility: visible;
+            }
+            
+            .f-control span i#hidepasswordcreationcompte,
+            i#hidepasswordcreationcomptecheck {
+                display: none;
+            }
+            
+            .f-control small {
+                visibility: hidden;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            
+            .f-control.error small {
+                color: #e74c3c;
+                visibility: visible;
+            }
+            
+            .form button.btnvalidation {
+                background: #04d05a;
+                color: #fff;
+                padding: 15px;
+                font-size: 20px;
+                margin-left: 435px;
+            }
+            
+            .form button.btnvalidation:hover {
+                border: 1px solid #fff;
+                box-shadow: 0px 0px 40px 25px #04d05a;
+            }
+            
+            .f-control span i.fa-envelope,
+            i.fa-check-circle-email,
+            i.fa-exclamation-circle-email {
+                top: 2px;
+            }
+            
+            .f-control i.fa-check-circle-email,
+            i.fa-exclamation-circle-email {
+                top: 9px;
+            }
+            
+            form .vl {
+                border-left: 1.5px solid #183a6e;
+                height: 500px;
+                margin-top: 35px;
+            }
+            
+            .form-control:hover {
+                border-color: #80bdff;
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                border-radius: 0.25rem;
+            }
+        </style>
+
+
+
+
+
+        <script src="../plugins/jquery/jquery.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+
+
+
+        <script>
+            /* 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 $("#seepasswordcreationcompte").click(function(){    
+                                                                                                                                                                              $("#passwordcreationcompte").attr("type", "text");
+                                                                                                                                                                              $("#seepasswordcreationcompte").hide(); //"this" here refers to " #seepassword "
+                                                                                                                                                                              $("#hidepasswordcreationcompte").show();
+                                                                                                                                                                         });
+
+
+                                                                                                                                                                        $("#hidepasswordcreationcompte").click(function() {
+                                                                                                                                                                             $("#passwordcreationcompte").attr("type", "password");
+                                                                                                                                                                             $("#hidepasswordcreationcompte").hide(); //"this" here refers to " #hidepassword "
+                                                                                                                                                                             $("#seepasswordcreationcompte").show();
+                                                                                                                                                                        });
+
+
+                                                                                                                                                                        $("#seepasswordcreationcomptecheck").click(function() {
+                                                                                                                                                                             $("#passwordcreationcomptecheck").attr("type", "text");
+                                                                                                                                                                             $("#seepasswordcreationcomptecheck").hide(); //"this" here refers to " #seepassword "
+                                                                                                                                                                             $("#hidepasswordcreationcomptecheck").show();
+                                                                                                                                                                        });
+
+                                                                                                                                                                         $("#hidepasswordcreationcomptecheck").click(function() {
+                                                                                                                                                                            $("#passwordcreationcomptecheck").attr("type", "password");
+                                                                                                                                                                            $("#hidepasswordcreationcomptecheck").hide(); //"this" here refers to " #hidepassword "
+                                                                                                                                                                            $("#seepasswordcreationcomptecheck").show();
+                                                                                                                                                                        });
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
+            const form = document.getElementById('form');
+            /*  const nom = document.getElementById('nom');
+             const prenom = document.getElementById('prenom');
+             const tel = document.getElementById('tel');
+             const adresse = document.getElementById('adresse');
+             */
+            const email = document.getElementById('emailcreationcompte');
+            /*  const nomutilisateur = document.getElementById('nomutilisateur');
+            const password = document.getElementById('passwordcreationcompte');
+            const passwordcheck = document.getElementById('passwordcreationcomptecheck');
+ */
+
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+
+                checkInputs();
+            });
+
+            function checkInputs() {
+
+
+                // trim to remove the whitespaces
+                /*   const nomvalue = nom.value.trim();
+                  const prenomvalue = prenom.value.trim();
+                  const telvalue = tel.value.trim();
+                  const adressevalue = adresse.value.trim();
+                  */
+                const emailvalue = email.value.trim();
+                /*   const nomutilisateurvalue = nomutilisateur.value.trim();
+                const passwordvalue = password.value.trim();
+                const passwordcheckvalue = passwordcheck.value.trim();
+ */
+                /*                 if (nomvalue === '') {
+                                    setErrorFor(nom, 'vous devez ecriver votre nom');
+                                } else {
+                                    setSuccessFor(nom);
+                                }
+
+                                if (prenomvalue === '') {
+                                    setErrorFor(prenom, 'vous devez ecriver votre prenom');
+                                } else {
+                                    setSuccessFor(prenom);
+                                }
+
+                                if (telvalue === '') {
+                                    setErrorFor(tel, 'vous devez ecriver votre tel');
+                                } else {
+                                    setSuccessFor(tel);
+                                }
+
+
+                                if (adressevalue === '') {
+                                    setErrorFor(adresse, 'vous devez ecriver votre adresse');
+                                } else {
+                                    setSuccessFor(adresse);
+                                }
+
+                                if (nomutilisateurvalue === '') {
+                                    setErrorFor(nomutilisateur, 'error');
+                                } else
+                                    setSuccessFor(nomutilisateur);
+                            }
+
+
+                            if (passwordvalue === '') {
+                                setErrorFor(password, 'Password cannot be blank');
+                            } else {
+                                setSuccessFor(password);
+                            }
+
+
+                            if (passwordcheckvalue === '') {
+                                setErrorFor(passwordcheck, 'Password2 cannot be blank');
+                            } else if (passwordvalue !== passwordcheckvalue) {
+                                setErrorFor(passwordcheck, 'Passwords does not match');
+                            } else {
+                                setSuccessFor(passwordcheck);
+                            }
+                 */
+
+                if (emailValue === '') {
+                    setErrorFor(email, 'Email cannot be blank');
+                }
+
+
+                function setErrorFor(input, message) {
+                    const formControl = input.parentElement;
+                    const small = formControl.querySelector('small');
+                    formControl.className = 'f-control error';
+                    small.innerText = message;
+                }
+
+                function setSuccessFor(input) {
+                    const formControl = input.parentElement;
+                    formControl.className = 'f-control success';
+                }
+            }
+        </script>
+
+
+
+</body>
+
+</html>

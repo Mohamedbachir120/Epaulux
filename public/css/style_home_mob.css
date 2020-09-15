@@ -1,0 +1,1765 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*/////////////////////////////////////////////////////////////// Html ///////////////////////////////////////////////////////////////*/
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/*/////////////////////////////////////////////////////////////// Main ///////////////////////////////////////////////////////////////*/
+
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+
+/*////////////////////////////////////////////////////////////// Helpers //////////////////////////////////////////////////////////////*/
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-bot-10 {
+    padding-bottom: 10px;
+}
+
+
+/*////////////////////////////////////////////////////////////// Header //////////////////////////////////////////////////////////////*/
+
+.header {
+    background: #d6e8ee;
+    width: 100%;
+    height: 6.5vh;
+    padding-top: 0.3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header img {
+    height: 4%;
+    width: 9.5%;
+    position: absolute;
+    box-shadow: 0px 0px 30px 7px skyblue;
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 10px 10px 0px;
+}
+
+.header #serch-box {
+    display: none;
+    width: 2.2%;
+    height: 4vh;
+    margin-left: 25%;
+    margin-top: 0.4%;
+}
+
+.header #serch-box input {
+    width: 2%;
+    height: 4.3vh;
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 1% 1% 1% 3%;
+    color: #183a6e;
+    font-size: 16px;
+    border-radius: 50px;
+    background: none;
+    transition: all 0.4s;
+}
+
+.header #serch-box button {
+    display: none;
+    position: absolute;
+    height: 4vh;
+    width: 1.9%;
+    margin-top: 0.09%;
+    margin-left: 0.2%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #fff;
+    background: #ea0000;
+}
+
+.header #serch-box .btn-fermer-recherche {
+    position: absolute;
+    color: #ea0000;
+    font-size: 20px;
+    margin-left: 25%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.header #serch-box:hover input,
+.header #serch-box input:focus {
+    width: 27%;
+    box-shadow: 0px 0px 0px 4px #1976d254;
+    background: #fff;
+}
+
+.header #serch-box:hover button,
+.header #serch-box:focus-within button {
+    background: #1976D2;
+    color: #fff;
+}
+
+.header #serch-box:hover .btn-fermer-recherche {
+    opacity: 1;
+    transition: all 2s;
+}
+
+.header .connect,
+.subscribe {
+    white-space: nowrap;
+    flex: 0.25;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    border-radius: 25px;
+    margin-top: 0%;
+    position: relative;
+    background: lightgreen;
+    color: #fff;
+    width: fit-content;
+    max-height: 70%;
+}
+
+.header .connect {
+    margin-left: 40%;
+}
+
+.header .subscribe {
+    margin-left: 2%;
+}
+
+.header .subscribe a,
+.connect a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.header .connect:hover,
+.subscribe:hover {
+    box-shadow: 0px 0px 5px 5px #0bad62;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .subscribe:focus {
+    outline: none;
+}
+
+.header .connect i,
+.subscribe i {
+    margin-right: 15px;
+}
+
+.header .connect:focus,
+.subscribe:focus {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+        -moz-transform: scale3d(0.75, 1.25, 1);
+        -ms-transform: scale3d(0.75, 1.25, 1);
+        -o-transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+/*/////////////////////////////////////////////////////////////// Nav ///////////////////////////////////////////////////////////////*/
+
+.navindex {
+    background: #021e4e;
+    width: 100%;
+    height: 10vh;
+    padding: 0.6% 15%;
+    z-index: 1030;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navindex ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navindex ul li {
+    white-space: nowrap;
+    flex:1;
+    width: fit-content;
+    font-size: 12px;
+    text-align: center;
+    padding: 1.5%;
+    border-radius: 10px;
+}
+
+.navindex ul li:nth-child(1) {
+    width: 25%;
+    margin-right: 2%;
+}
+
+.navindex ul li:nth-child(2) {
+    width: 35%;
+}
+
+.navindex ul li a {
+    color: skyblue;
+    text-decoration: none;
+    text-shadow: 0px 0px 20px lightblue;
+}
+
+.navindex ul li:hover {
+    background: white;
+    box-shadow: 0px 0px 30px 10px white;
+}
+
+.navindex ul li:hover a {
+    color: #001b48;
+}
+
+.navindex ul li a:hover {
+    color: #001b48;
+}
+
+
+/*///////////////////////////////////////////////// Menu produits provenant du navbar /////////////////////////////////////////////////*/
+
+.navindex ul li:nth-child(3):hover ul#menuproduits {
+    display: block;
+    transition: all 0.8s ease-in-out;
+}
+
+.navindex ul li ul#menuproduits {
+    position: absolute;
+    z-index: 16;
+    background: #fff;
+    background: linear-gradient(360deg, dodgerblue, white);
+    flex-direction: column;
+    margin-left: -10px;
+    margin-top: 2px;
+    width: 150px;
+    height: 501px;
+    padding: 0px;
+    border-radius: 0px 10px 10px 10px;
+    display: none;
+}
+
+.navindex ul li ul#menuproduits li {
+    width:150px;
+    height: 35.75px;
+    padding: 0px 15px 0px 25px;
+    text-align: left;
+}
+
+.navindex ul li ul#menuproduits li a {
+    color: #001b48;
+    font-size: 10px;
+    margin-top: 4px;
+    position: absolute;
+}
+
+.navindex ul li ul#menuproduits li a .fa-chevron-right {
+    font-size: 10px;
+}
+
+.navindex ul li ul#menuproduits li:nth-child(1) a .fa-chevron-right {
+    margin-left: 5px;
+}
+
+.navindex ul li ul#menuproduits li:nth-child(2) a .fa-chevron-right,
+.navindex ul li ul#menuproduits li:nth-child(12) a .fa-chevron-right {
+    margin-left: 5px;
+}
+
+.navindex ul li ul#menuproduits li:hover {
+    border-radius: 0px;
+    background: #001b48;
+    box-shadow: none;
+}
+
+.navindex ul li ul#menuproduits li:last-child:hover {
+    border-radius: 0px 0px 9px 9px;
+}
+
+.navindex ul li ul#menuproduits li:hover a {
+    color: #fff;
+}
+
+
+/* *********************************************** Menu epaulette , bordure , sangle ***********************************************  */
+
+.navindex ul li ul#menuproduits li#menuepaulette:hover ul#sousmenuepaulette,
+li#menubordure:hover ul#sousmenubordure,
+li#menusangle:hover ul#sousmenusangle {
+    display: block;
+    transition: all 0.8s ease-in-out;
+}
+
+.navindex ul li ul#menuproduits li#menuepaulette ul#sousmenuepaulette,
+li#menubordure ul#sousmenubordure,
+li#menusangle ul#sousmenusangle {
+    flex-direction: column;
+    width: 150px;
+    background: linear-gradient(360deg, dodgerblue, white);
+    margin-left: 140px;
+    position: absolute;
+    border-radius: 0px 10px 10px 0px;
+    display: none;
+}
+
+.navindex ul li ul#menuproduits li#menuepaulette ul#sousmenuepaulette li,
+li#menubordure:hover ul#sousmenubordure li,
+li#menusangle ul#sousmenusangle li {
+    width: 150px;
+    margin-left: -41px;
+    padding: 0px 0px 0px 10px;
+}
+
+.navindex ul li ul#menuproduits li#menuepaulette ul#sousmenuepaulette li a,
+li#menubordure:hover ul#sousmenubordure li a,
+li#menusangle ul#sousmenusangle li a {
+    color: #001b48;
+}
+
+.navindex ul li ul#menuproduits li#menuepaulette ul#sousmenuepaulette li:hover,
+li#menubordure:hover ul#sousmenubordure li:hover,
+li#menusangle ul#sousmenusangle li:hover {
+    border-radius: 0px;
+    background: #001b48;
+    box-shadow: none;
+}
+
+.navindex ul li ul#menuproduits li#menuepaulette ul#sousmenuepaulette li:first-child:hover,
+li#menubordure:hover ul#sousmenubordure li:first-child:hover,
+li#menusangle ul#sousmenusangle li:first-child:hover {
+    border-radius: 0px 9px 0px 0px;
+}
+
+.navindex ul li ul#menuproduits li#menuepaulette ul#sousmenuepaulette li:last-child:hover,
+li#menubordure:hover ul#sousmenubordure li:last-child:hover,
+li#menusangle ul#sousmenusangle li:last-child:hover {
+    border-radius: 0px 0px 9px 0px;
+}
+
+.navindex ul li ul#menuproduits li#menuepaulette ul#sousmenuepaulette li:hover a,
+li#menubordure:hover ul#sousmenubordure li:hover a,
+li#menusangle ul#sousmenusangle li:hover a {
+    color: #fff;
+}
+
+
+/*////////////////////////////////////////////////////////////// slider //////////////////////////////////////////////////////////////*/
+
+.slider {
+    width: 100%;
+}
+
+.slider ol {
+    margin-bottom: 0%;
+    width: 100%;
+
+}
+
+.slider .item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8,
+.item-9,
+.item-10,
+.item-11,
+.item-12 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.slider .item-1 {
+    background-image: url("/css/acceuil0.jpg");
+
+}
+
+.slider .item-2 {
+    background-image: url("/css/acceuil1.jpg");
+    background-position-y: -65px;
+}
+
+.slider .item-3 {
+    background-image: url("/css/acceuil2.jpg");
+}
+
+.slider .item-4 {
+    background-image: url("/css/acceuil3.jpg");
+}
+
+
+/
+.slider .item-5 {
+    background-image: url("/css/acceuil4.jpg");
+}
+
+.slider .item-6 {
+    background-image: url("/css/acceuil5.jpg");
+}
+/*
+.slider .item-7 {
+    background-image: url("../img/acceuil/acceuil6.jfif");
+} */
+
+
+/* 
+.slider .info {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.slider .i-1 {
+    margin-top: 120px;
+    margin-left: 130px;
+}
+
+.slider .i-2 {
+    margin-top: 120px;
+    margin-left: 717px;
+    width: 600px;
+    height: 400px;
+}
+
+.slider .i-3,
+.i-4 {
+    margin-top: 120px;
+    margin-left: 717px;
+    width: 600px;
+    height: 400px;
+}
+
+.slider .i-5 {
+    margin-top: 180px;
+    margin-left: 155px;
+    width: 480px;
+    height: 400px;
+}
+ */
+
+.slider .prev,
+.next {
+    width: 5%;
+    height: 10vh;
+    background: dodgerblue;
+    margin-top: -25%;
+    position: absolute;
+    z-index: 1020;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.slider .prev a,
+.next a {
+    font-size: 12px;
+    color: #fff;
+}
+
+.slider .prev {
+    margin-left: 3%;
+    padding: 0.2% 0.4%;
+}
+
+.slider .next {
+    margin-left: 90%;
+    padding: 0.2% 0.4%;
+ }
+
+.slider:hover .prev {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider:hover .next {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider span.prev:hover,
+.slider span.next:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*///////////////////////////////////////////////////////////// Features /////////////////////////////////////////////////////////////*/
+
+.features {
+    margin-top: 10%;
+    width: 100%;
+    height: 40vh;
+    background: lightblue;
+}
+
+.features img {
+    width: 71%;
+    height: 74%;
+    margin-left: 14%;
+    margin-top: -10.5%;
+    position: absolute;
+    z-index: 1020;
+    filter: blur(1px);
+    box-shadow: 0px 0px 30px 10px dodgerblue;
+}
+.features #dl{
+    width: 90%;
+    height: 45%;
+    margin-left: 5%;
+    position: absolute;
+    z-index: 1020;
+    filter: blur(1px);
+    box-shadow: 0px 0px 0px 0px dodgerblue;
+}
+.features .row {
+    width: 64%;
+    height: 60%;
+    margin-left: 17.5%;
+    margin-top: -7%;
+    position: absolute;
+    z-index: 1020;
+}
+
+.features .row .feature-card {
+    margin-top: 30%;
+    width: 25%;
+    height: 40%;
+    margin: 8% 0 0 6.5%;
+    border-radius: 50%;
+    background: #1e8fff;
+}
+
+.features .row .feature-card img {
+    width: 8.3%;
+    height: 15%;
+    box-shadow: none;
+    background: white;
+  margin-top: 75px;
+    filter: none;
+    padding: 1%;
+    border-radius: 24%;
+    margin-left: 8.5%;
+}
+
+.features .row .feature-card:nth-child(2) img {
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    box-shadow: none;
+    background: white;
+    margin-top:75px;
+    filter: none;
+    padding: 8px;
+    border-radius: 24%;
+    margin-left: 27%;
+}
+
+.features .row .feature-card h4 {
+    text-align: center;
+    white-space: pre-wrap;
+    margin-top: 30%;
+    color: #fff;
+    font-size: 12px;
+}
+
+.features .row .feature-card:hover {
+    background: white;
+    box-shadow: 0px 0px 30px 10px #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.features .row .feature-card:hover h4 {
+    color: dodgerblue;
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*///////////////////////////////////////////////////////////// Apropos /////////////////////////////////////////////////////////////*/
+
+.apropos {
+    margin-top: 20%;
+    position: relative;
+    height:fit-content;
+    padding-top: 7%;
+}
+
+.apropos h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #050f76;
+    text-align: center;
+    
+    margin-top: 40px;
+    text-shadow: 0px 0px 20px;
+}
+
+.apropos img {
+    display: none;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 1%;
+}
+
+.apropos h4 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #050f76;
+    text-align: center;
+    margin-top: -1%;
+}
+
+.apropos .line-break {
+    border-bottom: 1px solid #3b8592;
+    width: 67%;
+    margin-left: 33%;
+    margin-bottom: 3%;
+}
+
+.apropos .first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 25px;
+    line-height: 90%;
+    padding-right: 2%;
+    padding-left: 1%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: skyblue;
+}
+
+.apropos p {
+    margin-left: 5%;
+    font-size: 12px;
+    width: 90%;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    text-align: justify;
+}
+
+
+/*//////////////////////////////////////////////////////// Notre enreprise ////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'Parisienne';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Parisienne'), local('Parisienne-Regular'), url(https://fonts.gstatic.com/s/parisienne/v7/E21i_d3kivvAkxhLEVZpQyZwD9Ku.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Parisienne';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Parisienne'), local('Parisienne-Regular'), url(https://fonts.gstatic.com/s/parisienne/v7/E21i_d3kivvAkxhLEVZpQyhwDw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.notreentreprise {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+   }
+
+.notreentreprise p {
+    line-height: 165%;
+    background: #87ceeb82;
+    color: #001b48;
+    font-family: 'parisienne', cursive;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5.4% 10%;
+}
+
+.notreentreprise span {
+    color: yellow;
+    font-family: 'parisienne', cursive;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 40%;
+}
+
+.notreentreprise span:first-child {
+    margin-left: -33%;
+}
+
+
+/*/////////////////////////////////////////////////////////// Notre equipe ///////////////////////////////////////////////////////////*/
+
+.notreequipe {
+    position: relative;
+    height: fit-content;
+    padding-top: 9%;
+    margin-left: 0%;
+    background: #add8e64a;
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+
+.notreequipe h1 {
+    font-size: 20px;
+    margin-bottom: 4%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #050f76;
+    text-align: center;
+    text-shadow: 0px 0px 20px;
+}
+
+.notreequipe .line {
+    width: 10%;
+    height: 2%;
+    margin-left: 46%;
+    margin-bottom: 1%;
+    margin-top: -1.5%;
+    background: lightblue;
+}
+.notreequipe .row{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+
+}
+.notreequipe .card {
+    box-shadow: 0px 0px 12px -2px;
+    width: 32%;
+    height:350px;
+    margin-left:1%;
+    background-image: url("/css/card-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.notreequipe .card-info {
+    height: 60%;
+    width: 100.8%;
+    margin-left: -0.5%;
+    margin-top: 212px;
+    margin-bottom: -1px;
+    background: #001b48a8;
+    border-radius: 0 0 .25rem .25rem;
+    overflow: hidden;
+}
+
+.notreequipe .card:hover .card-info {
+    margin-top: 70%;
+    background: #001b48e3;
+    transition: all 1s ease-in-out;
+}
+
+.notreequipe .card-info h3 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 12%;
+    color: #fff;
+}
+
+.notreequipe .card-info h4 {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.notreequipe .card-info h6 {
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.notreequipe .card-info:first-child h6:nth-child(6),
+h6:nth-child(7) {
+    margin-left: 11%;
+}
+
+.notreequipe .card-info h6 i {
+    margin-right: 5%;
+}
+
+
+/*/////////////////////////////////////////////////////// Button scroll to top ///////////////////////////////////////////////////////*/
+
+.scrollToTop {
+    
+    border: none;
+    outline: none;
+    width: 0%;
+    height: 0%;
+    background-size: cover;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2%;
+    right: 4%;
+    z-index: 20;
+    display: none;
+   
+}
+
+
+/*///////////////////////////////////////////////////////////// Footer /////////////////////////////////////////////////////////////*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    background-image: url("/css/footer.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .footer-info {
+    width: 100%;
+    height: 90%;
+    margin-left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+footer .footer-info .liens-utiles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid dodgerblue;
+    margin: 50px 35px 35px 20px;
+    padding-left: 0.5%;
+    padding-top: 1%;
+}
+
+footer .footer-info .liens-utiles h5 {
+   white-space: nowrap;
+   font-size: 12px;
+    color: skyblue;
+    margin-top: -10%;
+    margin-bottom: 10%;
+  }
+
+footer .footer-info .liens-utiles a,
+.contact span {
+    white-space: nowrap;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+}
+
+footer .footer-info .liens-utiles a div {
+    width: 16%;
+    height: 45px;
+    padding: 2% 3%;
+    border-radius: 50%;
+    margin-top: -3%;
+    margin-right: 7%;
+}
+
+footer .footer-info .liens-utiles a div img,
+.contact span div img {
+
+    width: auto;
+    height: auto;
+}
+
+footer .footer-info .liens-utiles a:hover div {
+    background: white;
+    box-shadow: 0px 0px 20px 10px white;
+}
+
+footer .footer-info .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+footer .footer-info .contact h5 {
+    letter-spacing: 1px;
+    color: skyblue;
+    text-align: center;
+    margin-top: -2%;
+    margin-bottom: 5%;
+}
+
+footer .footer-info .contact span img {
+    width: 5%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+}
+
+footer .footer-info .localisation {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin-left: 2%;
+}
+
+footer .footer-info iframe {
+    width: 90%;
+    height: 90%;
+    margin: 4.5% 15%;
+    border-radius: 3%;
+}
+
+footer .footer-info iframe:hover {
+    box-shadow: 0px 0px 20px 10px dodgerblue;
+}
+
+footer .reseauxsociaux {
+    display: flex;
+    position: absolute;
+    width: 20%;
+    margin-top: -4%;
+    margin-left: 37%;
+}
+
+footer .reseauxsociaux a {
+    margin: 0 1.5%;
+}
+
+footer .reseauxsociaux a img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+footer .reseauxsociaux a:hover img {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 10px 5px lightblue;
+    transition: transform 0.5s ease-in-out;
+}
+
+footer .copyright {
+    width: 100%;
+    height: 14vh;
+    
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid;
+}
+
+footer .copyright p {
+    color: white;
+    font-size: 10px;
+    margin-left: -50px;
+}
+
+footer .copyright p:nth-child(1) {
+    padding-top: 15px;
+}
+
+footer .copyright p:nth-child(2) {
+    margin-top: -10px;
+}
+
+
+/*///////////////////////////////////////////////////// formulaire d'inscription /////////////////////////////////////////////////////*/
+
+.navinscription {
+    height: 70px;
+    background: none;
+}
+
+.navinscription a img {
+    height: 60px;
+    width: 135px;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    border-radius: 10px;
+    border-radius: 10px 10px 0px;
+}
+
+.navinscription h1 {
+    color: white;
+    margin-top: -4%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.form-inscription {
+    width: 101%;
+    height: 100vh;
+    background-image: url("/css/inscription.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -5%;
+    padding-top: 10%;
+    padding-left: 5%;
+    background-position-y: 45%;
+    background-position-x: 127px;
+    background-color: #b8e8fb;
+}
+
+.form-inscription .compte {
+    margin-left: 5%;
+}
+
+.form-inscription .f-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inscription .f-control label {
+    color: #001b48;
+}
+
+.form-inscription .f-control input {
+    border: none;
+    outline: none;
+    padding: 5px 5px 5px 15px;
+    width: 350px;
+    color: #001b48;
+    border-radius: 5px;
+}
+
+.form-inscription .f-control input:hover {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-radius: 0.25rem;
+}
+
+.form-inscription .f-control i {
+    color: dodgerblue;
+    font-size: 23px;
+    margin-top: -6.5%;
+    margin-left: 90%;
+}
+
+.form-inscription .f-control i.fa-eye-slash {
+    display: none;
+}
+
+.form-inscription .f-control i.fa-check-circle,
+.f-control i.fa-exclamation-circle {
+    margin-top: -6.5%;
+    font-size: 23px;
+    margin-left: 80%;
+    visibility: hidden;
+}
+
+.form-inscription .f-control .fa-check-circle {
+    color: #2ecc71;
+}
+
+.form-inscription .f-control .fa-exclamation-circle {
+    color: #e74c3c;
+}
+
+.form-inscription .f-control.success i.fa-check-circle,
+.f-control.error i.fa-exclamation-circle {
+    visibility: visible;
+}
+
+.form-inscription .f-control.success input {
+    box-shadow: 0 0 0 0.1rem #2ecc71;
+}
+
+.form-inscription .f-control.error input {
+    box-shadow: 0 0 0 0.1rem #e74c3c;
+}
+
+.form-inscription .f-control small {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    visibility: hidden;
+}
+
+.form-inscription .f-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-inscription button {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background: #32e232;
+    height: 50px;
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 20%;
+}
+
+.form-inscription button:hover {
+    box-shadow: 0px 0px 30px 20px #fff;
+    color: #fff;
+}
+
+
+/*///////////////////////////////////////////////////// formulaire de connexion /////////////////////////////////////////////////////*/
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/css/ecommerce5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+}
+
+.login a img {
+    height: 9vh;
+    width: 9.5%;
+    margin-left: 3%;
+    margin-bottom: -4%;
+    margin-top: 1.5%;
+    border-radius: 10px 10px 0px;
+}
+
+.login h3 {
+    color: dodgerblue;
+    text-align: center;
+    margin-bottom: 17%;
+    letter-spacing: 1px;
+}
+
+.login .loginform {
+    width: 31%;
+    height: 72%;
+    padding: 3%;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 8%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login .loginform .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15%;
+}
+
+.login .loginform .input-box input {
+    padding: 2% 2% 2% 5%;
+    border: none;
+    outline: none;
+    color: #001b48;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid dodgerblue;
+    background: white;
+    border-radius: 10px 10px 0px;
+}
+
+.login .loginform .input-box input:hover {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.login form .input-box label {
+    margin-top: 2%;
+    margin-left: 4%;
+    color: #001b48;
+    letter-spacing: 1px;
+    position: absolute;
+}
+
+.login .loginform .input-box small {
+    margin-top: 2%;
+    margin-bottom: -2%;
+    margin-left: 5%;
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.login .loginform .input-box input:hover~label {
+    margin-top: -7%;
+    margin-left: 2%;
+    font-size: 12px;
+    color: grey;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.login .loginform .input-box i {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 71%;
+    color: dodgerblue;
+    font-size: 23px;
+}
+
+.login .loginform .input-box i.fa-eye-slash {
+    display: none;
+}
+
+.login .loginform .input-box i.fa-check-circle,
+.loginform .input-box i.fa-exclamation-circle {
+    margin-left: 63%;
+    visibility: hidden;
+}
+
+.login .loginform .input-box i.fa-check-circle {
+    color: #2ecc71;
+}
+
+.login .loginform .input-box i.fa-exclamation-circle {
+    color: #e74c3c;
+}
+
+.login .loginform button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 10px;
+    background: #001b48;
+    color: #fff;
+    font-size: 20px;
+}
+
+.login .loginform button:hover {
+    background: dodgerblue;
+    box-shadow: 0px 0px 30px 10px dodgerblue;
+}
+
+.login .loginform p {
+    margin-top: 9%;
+    margin-bottom: -2%;
+    margin-left: 3%;
+}
+
+
+/*/////////////////////////////////////////// formulaire de recuperation de mot de passe ///////////////////////////////////////////*/
+
+.navrecuperationmdp {
+    height: 11vh;
+    box-shadow: 0px 0px 30px 1px lightblue;
+}
+
+.navrecuperationmdp a img.fleche {
+    width: 3.5%;
+    height: 7vh;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.navrecuperationmdp a img.logo {
+    height: 13vh;
+    width: 22%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 29%;
+    margin-top: -0.5%;
+}
+
+.mdpoubliee {
+    width: 42%;
+    height: 80vh;
+    float: left;
+    background-image: url("/css/mdp8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.recuperationmdp {
+    float: right;
+    margin-top: 5.5%;
+    margin-right: 13%;
+    padding: 3%;
+    width: 41%;
+    height: 67vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 20px 20px 0px 1px skyblue;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px solid skyblue;
+    background: aliceblue;
+}
+
+.recuperationmdp h4 {
+    margin-bottom: 3%;
+    color: dodgerblue;
+    letter-spacing: 1px;
+}
+
+.recuperationmdp p {
+    margin-bottom: 8%;
+}
+
+.recuperationmdp label {
+    letter-spacing: 1px;
+    color: dodgerblue;
+    font-size: 17px;
+}
+
+.recuperationmdp input {
+    outline: none;
+    border: 1px solid dodgerblue;
+    padding: 2% 2% 2% 5%;
+    border-radius: 10px;
+    margin-bottom: 12%;
+}
+
+.recuperationmdp input:hover,
+input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    border: none;
+}
+
+.recuperationmdp i {
+    font-size: 23px;
+    color: dodgerblue;
+    margin-top: -20%;
+    margin-left: 91%;
+}
+
+.recuperationmdp i.fa-exclamation-circle,
+i.fa-check-circle {
+    margin-left: 27.5%;
+    margin-top: 12.4%;
+    visibility: hidden;
+}
+
+.recuperationmdp i.fa-exclamation-circle {
+    color: #e74c3c;
+}
+
+.recuperationmdp i.fa-check-circle {
+    color: #2ecc71;
+}
+
+.recuperationmdp button {
+    white-space: nowrap;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 37%;
+    margin-top: -20%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background: dodgerblue;
+}
+
+.recuperationmdp button:hover {
+    background: #32d032;
+    box-shadow: 0px 0px 30px 10px #32d032;
+}
+
+
+/*////////////////////////////////////////// formulaire de réinitialisation de mot de passe //////////////////////////////////////////*/
+
+.navreinitialisationmdp {
+    height: 11vh;
+    box-shadow: 0px 0px 30px 1px lightblue;
+}
+
+.navreinitialisationmdp img {
+    height: 13vh;
+    width: 22%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 34%;
+    margin-top: -0.5%;
+}
+
+.reinitialisationmdp {
+    width: 42%;
+    height: 75vh;
+    float: right;
+    background-image: url("/css/nvmdp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.newpasswordform {
+    float: left;
+    margin-top: 3%;
+    margin-left: 8%;
+    padding: 4%;
+    width: 40%;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -20px 20px 0px 1px skyblue;
+    border-radius: 0px 10px 0px 0px;
+    border: 1px solid skyblue;
+    background: aliceblue;
+}
+
+.newpasswordform h4 {
+    margin-top: -4%;
+    margin-bottom: 5%;
+    color: dodgerblue;
+    letter-spacing: 1px;
+}
+
+.newpasswordform p {
+    margin-bottom: 8%;
+}
+
+.newpasswordform .input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.newpasswordform label {
+    letter-spacing: 1px;
+    color: dodgerblue;
+    font-size: 18px;
+}
+
+.newpasswordform input {
+    outline: none;
+    border: 1px solid dodgerblue;
+    padding: 2% 2% 2% 5%;
+    border-radius: 10px;
+    margin-bottom: 8%;
+}
+
+.newpasswordform input:hover,
+input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    border: none;
+}
+
+.newpasswordform i {
+    position: absolute;
+    font-size: 23px;
+    color: dodgerblue;
+    margin-top: 3%;
+    margin-left: 29%;
+}
+
+.newpasswordform i.fa-eye-slash {
+    display: none;
+}
+
+.newpasswordform i.fa-exclamation-circle,
+i.fa-check-circle {
+    margin-left: 27%;
+    visibility: hidden;
+}
+
+.newpasswordform i.fa-exclamation-circle {
+    color: #e74c3c;
+}
+
+.newpasswordform i.fa-check-circle {
+    color: #2ecc71;
+}
+
+.newpasswordform small {
+    color: #e74c3c;
+    margin-top: -6%;
+    margin-left: 3%;
+    margin-bottom: 7%;
+    visibility: hidden;
+}
+
+.newpasswordform button {
+    border: none;
+    outline: none;
+    width: 120px;
+    margin-left: 37%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background: dodgerblue;
+}
+
+.newpasswordform button:hover {
+    background: #32d032;
+    box-shadow: 0px 0px 30px 10px #32d032;
+}
+
+
+/*////////////////////////////////////////////////////////// Page produits //////////////////////////////////////////////////////////*/
+
+.produits {
+    background: aliceblue;
+    width: 100%;
+    padding: 1% 6%;
+}
+
+.produits .breadcrumb {
+    background: linear-gradient(45deg, #b6e3f8, aliceblue);
+    border-radius: 30px;
+    padding: 1.5% 1% 1.5% 3%;
+}
+
+.produits .intro-produits {
+    background: aliceblue;
+}
+
+.produits .intro-produits img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px dodgerblue;
+    transition: all 1.5s ease-in-out;
+}
+
+.produits .intro-produits .text {
+    position: absolute;
+    background-image: url("/css/textprod0.jpg");
+    background-size: cover;
+    background-position-y: 0px;
+    background-position-x: -277px;
+    width: 51%;
+    margin-top: -57.7%;
+    margin-left: 24%;
+    height: 77%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 10px;
+    padding: 3.5%;
+}
+
+.produits .intro-produits .text h3 {
+    text-align: center;
+    color: dodgerblue;
+    letter-spacing: 1px;
+    margin-bottom: 7%;
+}
+
+.produits .intro-produits .text p {
+    color: #001b48;
+}
+
+.prod-row {
+    display: flex;
+    margin-top: 5%;
+    margin-left: -2%;
+}
+
+.prod-card {
+    width: 25%;
+    height: 39vh;
+    margin-left: 2%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+.prod-card:hover {
+    box-shadow: 15px -15px 0px -3px #1e90ff69;
+    box-shadow: 15px -15px 0px -3px #001b48;
+    border: 1px solid white;
+    transition: all 0.6s ease-in-out;
+}
+
+.prod-card img {
+    width: 100%;
+    height: 100%;
+    transition: all 1.5s ease-in-out;
+}
+
+.prod-card:hover img {
+    transform: scale(1.2);
+}
+
+.prod-card .prod-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: #1e8fffd6;
+    color: #fff;
+    padding: 8%;
+    border-radius: 0px 0px 5px 5px;
+    transition: all .9s ease 0s;
+    margin-top: -27%;
+    border-top: 3px solid white;
+}
+
+.prod-card .prod-info {
+    background: rgba(30, 143, 255, 0.548);
+    width: 100%;
+    height: 74.3%;
+    list-style: none;
+    position: absolute;
+    margin-top: -94%;
+    opacity: 0;
+    display: flex;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.prod-card:hover .prod-info {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.prod-card .prod-info li {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    padding: 1.5% 4%;
+    transition: all 0.6s ease-in-out;
+}
+
+.prod-card .prod-info li:first-child {
+    left: -90%;
+    right: 0;
+}
+
+.prod-card .prod-info li:last-child {
+    right: -90%;
+    left: 0;
+}
+
+.prod-card:hover .prod-info li {
+    top: 30%;
+}
+
+.prod-card:hover .prod-info li:first-child {
+    left: -55px;
+}
+
+.prod-card:hover .prod-info li:last-child {
+    right: -55px;
+}
+
+.prod-card:hover .prod-info li a {
+    color: dodgerblue;
+    font-size: 25px;
+}
+
+.prod-card:hover .prod-info li:hover {
+    box-shadow: 0px 0px 25px 10px white;
+}
+
+
+.dirlacommande {
+    padding: 2% 1%;
+    border: none;
+    outline: none;
+    background: dodgerblue;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 7% 35% 5% 35%;
+    background: linear-gradient(45deg, dodgerblue, dodgerblue, lightgreen, #46f06b, #2ecc71, #32e232);
+    background-size: 400% 400%;
+    box-shadow: 15px 15px 30px 1px #EC407A;
+}
+
+.dirlacommande:hover {
+    box-shadow: 10px 10px 0 #EC407A;
+    background-position: 100% 0;
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+}
+
+.dirlacommande:focus {
+    outline: none;
+}
+
+
+/*//////////////////////////////////////////////////////////////// Fin ////////////////////////////////////////////////////////////////*/

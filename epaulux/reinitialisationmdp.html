@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EPAULUX</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/googlefont.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="main">
+
+        <div class="navreinitialisationmdp">
+            <a href="index.html">
+                <img src="img/nvlogo.PNG" alt="">
+            </a>
+        </div>
+        <div class="reinitialisationmdp"></div>
+
+        <form class="newpasswordform" id="newpasswordform">
+            <h4>Réinitialiser votre mot de passe </h4>
+            <p>Saisissez un nouveau mot de passe</p>
+
+            <div class="input-box">
+                <label>Nouveau mot de passe</label>
+                <input type="password" id="newpassword" class="password" minlength="5" name="">
+                <i class="fa fa-check-circle newpasswordcheck"></i>
+                <i class="fa fa-exclamation-circle newpasswordexclamation"></i>
+                <i class="fa fa-eye seenewpassword" aria-hidden="true"></i>
+                <i class="fa fa-eye-slash hidenewpassword" aria-hidden="true"></i>
+
+            </div>
+            <div class="input-box">
+                <label>Confirmer votre nouveau mot de passe</label>
+                <input type="password" id="newpasswordconfirm" class="newpasswordconfirm" minlength="5" name="">
+                <i class="fa fa-check-circle newpasswordconfirmcheck"></i>
+                <i class="fa fa-exclamation-circle newpasswordconfirmexclamation"></i>
+                <i class="fa fa-eye seenewpasswordconfirm" aria-hidden="true"></i>
+                <i class="fa fa-eye-slash hidenewpasswordconfirm" aria-hidden="true"></i>
+                <small>Error message</small>
+
+            </div>
+
+            <button type="submit" name="">Valider</button>
+
+        </form>
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- main  -->
+
+
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
+
+<style>
+    .navreinitialisationmdp {
+        height: 80px;
+        box-shadow: 0px 0px 30px 1px lightblue;
+    }
+    
+    .navreinitialisationmdp img {
+        height: 14%;
+        width: 24%;
+        position: absolute;
+        margin-left: 29%;
+        z-index: -1;
+    }
+    
+    .reinitialisationmdp {
+        width: 42%;
+        height: 475px;
+        float: right;
+        background-image: url("img/mdp2v2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 60%;
+        margin-top: 3%;
+        margin-right: 5%;
+    }
+    
+    .newpasswordform {
+        float: left;
+        margin-top: 3%;
+        margin-left: 8%;
+        padding: 3%;
+        width: 40%;
+        height: 445px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: -20px 20px 0px 1px skyblue;
+        border-radius: 0px 10px 0px 0px;
+        border: 1px solid skyblue;
+        background: aliceblue;
+    }
+    
+    .newpasswordform h4 {
+        margin-top: -4%;
+        margin-bottom: 5%;
+        color: dodgerblue;
+        letter-spacing: 1px;
+    }
+    
+    .newpasswordform p {
+        margin-bottom: 8%;
+    }
+    
+    .newpasswordform .input-box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .newpasswordform label {
+        letter-spacing: 1px;
+        color: dodgerblue;
+        font-size: 18px;
+    }
+    
+    .newpasswordform input {
+        outline: none;
+        border: 1px solid dodgerblue;
+        padding: 2% 2% 2% 5%;
+        border-radius: 10px;
+        margin-bottom: 8%;
+    }
+    
+    .newpasswordform input:hover,
+    input:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+        border: none;
+    }
+    
+    .newpasswordform i {
+        position: absolute;
+        font-size: 23px;
+        color: dodgerblue;
+        margin-top: 3.5%;
+        margin-left: 31%;
+    }
+    
+    .newpasswordform i.fa-eye-slash {
+        display: none;
+    }
+    
+    .newpasswordform i.fa-exclamation-circle,
+    i.fa-check-circle {
+        margin-left: 28%;
+        margin-top: 3.5%;
+        visibility: hidden;
+    }
+    
+    .newpasswordform i.fa-exclamation-circle {
+        color: #e74c3c;
+    }
+    
+    .newpasswordform i.fa-check-circle {
+        color: #2ecc71;
+    }
+    
+    .newpasswordform small {
+        color: #e74c3c;
+        margin-top: -6%;
+        margin-left: 3%;
+        margin-bottom: 7%;
+        visibility: hidden;
+    }
+    
+    .newpasswordform button {
+        border: none;
+        outline: none;
+        width: 120px;
+        margin-left: 37%;
+        padding: 2%;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        background: dodgerblue;
+    }
+    
+    .newpasswordform button:hover {
+        background: #32d032;
+        box-shadow: 0px 0px 30px 10px #32d032;
+    }
+</style>
+
+
+
+<script>
+    $(document).ready(function() {
+
+
+        /*///////////////// validation de formulaire de reintialisation de mot de passe oublié /////////////////*/
+
+        const newpasswordform = document.getElementById('newpasswordform');
+        const newpassword = document.getElementById('newpassword');
+        const newpasswordconfirm = document.getElementById('newpasswordconfirm');
+
+        newpasswordform.addEventListener('submit', e => {
+            e.preventDefault();
+
+            checkmdpoublieemail();
+        });
+
+        function checkmdpoublieemail() {
+            const newpasswordValue = newpassword.value.trim();
+            const newpasswordconfirmValue = newpasswordconfirm.value.trim();
+            const small = newpasswordform.querySelector('small');
+
+
+            if (newpasswordValue === '') {
+
+                newpassword.style.boxShadow = " 0 0 0 0.1rem #e74c3c";
+                newpassword.style.border = " none";
+                $(".newpasswordexclamation").css("visibility", "visible");
+                $(".newpasswordcheck").css("visibility", "hidden");
+
+
+            } else {
+                newpassword.style.boxShadow = " 0 0 0 0.1rem #2ecc71";
+                newpassword.style.border = " none";
+                $(".newpasswordexclamation").css("visibility", "hidden");
+                $(".newpasswordcheck").css("visibility", "visible");
+
+            }
+            if (newpasswordconfirmValue === '') {
+
+                newpasswordconfirm.style.boxShadow = " 0 0 0 0.1rem #e74c3c";
+                newpasswordconfirm.style.border = " none";
+                $(".newpasswordconfirmexclamation").css("visibility", "visible");
+                $(".newpasswordconfirmcheck").css("visibility", "hidden");
+
+
+
+            } else {
+                newpasswordconfirm.style.boxShadow = " 0 0 0 0.1rem #2ecc71";
+                newpasswordconfirm.style.border = " none";
+                $(".newpasswordconfirmexclamation").css("visibility", "hidden");
+                $(".newpasswordconfirmcheck").css("visibility", "visible");
+
+            }
+            /*  if (newpasswordValue !== newpasswordconfirmValue) {
+                 newpasswordconfirm.style.boxShadow = " 0 0 0 0.1rem #e74c3c";
+                 newpasswordconfirm.style.border = " none";
+                 $(".newpasswordconfirmexclamation").css("visibility", "visible");
+                 $(".newpasswordconfirmcheck").css("visibility", "hidden");
+                 small.innerText = " password 2 doesn't match";
+                 small.style.visibility = "visible";
+             } */
+
+
+            /*  if (newpasswordValue === newpasswordconfirmValue) {
+                 newpasswordconfirm.style.boxShadow = " 0 0 0 0.1rem #2ecc71";
+                 newpasswordconfirm.style.border = " none";
+                 $(".newpasswordconfirmexclamation").css("visibility", "hidden");
+                 $(".newpasswordconfirmcheck").css("visibility", "visible");
+                 small.style.visibility = "hidden";
+
+             } */
+
+        };
+        /*///////////////////////////////////// see and hide new password /////////////////////////////////////*/
+        $(".seenewpassword").click(function() {
+
+            $("#newpassword").attr("type", "text");
+            $(".seenewpassword").hide();
+            $(".hidenewpassword").show();
+
+        });
+
+
+        $(".hidenewpassword").click(function() {
+
+            $("#newpassword").attr("type", "password");
+            $(".hidenewpassword").hide();
+            $(".seenewpassword").show();
+
+        });
+        /*///////////////////////////////////// see and hide new password confirm /////////////////////////////////////*/
+        $(".seenewpasswordconfirm").click(function() {
+
+            $("#newpasswordconfirm").attr("type", "text");
+            $(".seenewpasswordconfirm").hide();
+            $(".hidenewpasswordconfirm").show();
+
+        });
+
+
+        $(".hidenewpasswordconfirm").click(function() {
+
+            $("#newpasswordconfirm").attr("type", "password");
+            $(".hidenewpasswordconfirm").hide();
+            $(".seenewpasswordconfirm").show();
+
+        });
+
+
+        /*/////////////////////// keep the input's design while typing ///////////////////////*/
+
+        $("#newpassword").keyup(function() {
+            /*//////////////////////////////////// new password input ////////////////////////////////////*/
+
+            $("#newpassword").css("border", "none");
+            $("#newpassword").css("border-radius", "10px");
+            $("#newpassword").css("box-shadow", "0 0 0 0.2rem rgba(0, 123, 255, 0.25)");
+
+        });
+        $("#newpasswordconfirm").keyup(function() {
+            /*//////////////////////////////////// new password confirm input ////////////////////////////////////*/
+
+            $("#newpasswordconfirm").css("border", "none");
+            $("#newpasswordconfirm").css("border-radius", "10px");
+            $("#newpasswordconfirm").css("box-shadow", "0 0 0 0.2rem rgba(0, 123, 255, 0.25)");
+
+        });
+
+        /*//////////////////////////////////////////////// End ////////////////////////////////////////////////*/
+
+
+    });
+</script>

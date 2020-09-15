@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="container">
+
+
+
+    <form>
+
+      <select name="p" id="produits">
+
+
+          <option value="1">Epaulettes</option>
+          <option value="2">Bordures</option>
+          <option value="3">Galons en rayonne</option>
+          <option value="4">Zigzag</option>
+          <option value="5">Cordon 100% rayonne</option>
+          <option value="6">Macrame</option>
+          <option value="7">Bande de suvetement</option>
+          <option value="8">Fermetures éclairs</option>
+          <option value="9">Déchets</option>
+          <option value="10">Cigare veste</option>
+          <option value="11">Lacets</option>
+          <option value="12">Sangles</option>
+          <option value="13">Fil à crochet</option>
+          <option value="14">Boutons</option>
+
+
+      </select>
+
+
+
+      <select name="smp" id="sousmenuproduits" type="multiple"></select>
+
+
+    </form>
+
+
+
+    
+</div>  <!-- container  -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+
+
+
+<script>
+
+
+  var prod = {
+
+    "1":["Epaulettes 'Mousse' Arrondies EAR ","Epaulettes 'Mousse' Classiques L ","Epaulettes 'Mousse' Magiques ","Epaulettes BOCH EARB "],
+    "2":["Bordures matelas","Bordures matelas en polystère","Bordures matelas en coton"],
+    "3":["Oran","Ain turk","Arzew","Essania"]
+
+  }
+
+
+$(document).ready(function(){
+
+  $("#produits").on('change',function(){
+    
+    console.log($(this).val());
+
+    var p=$("#produits").val();
+    $("#sousmenuproduits").empty();
+    $.each(prod[p],function(id_prod,sousmenuproduits){
+
+     var cpt=$('<option>');
+     cpt.val(id_prod);
+     cpt.text(sousmenuproduits);
+     $('#sousmenuproduits').append(cpt);
+
+
+
+    });
+
+
+
+  })
+
+
+
+});
+
+
+
+</script>

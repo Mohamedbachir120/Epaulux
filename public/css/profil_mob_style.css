@@ -1,0 +1,285 @@
+.grid-container{
+    margin-top:10%;
+    display: grid; 
+     grid-template-columns: auto;
+     
+     padding: 4px;
+  }
+  .grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .grid-item img{
+    width: 80%;
+    border-radius: 6px;
+    height:100px;
+  }
+  .grid-item a{
+      font-size: 10px;
+      font-weight: bold;
+  }
+  
+      .profilclient {
+          width: 100%;
+          height: 92vh;
+          background-image: url("img/profilclient.jpg");
+          background-position-y: 75%;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      
+      .navclient {
+          background: #021e4e;
+          width: 100%;
+          height: 10vh;
+          padding: 0.6% 2% 0.6% 5%;
+          z-index: 1030;
+          display: flex;
+          flex-direction: row;
+      }
+  
+      .navclient a{
+        max-width: 100px;
+      }
+  
+  
+   .navclient a img {
+          width: 50%;
+          height: 8vh;
+          box-shadow: 0px 0px 7px 2px skyblue;
+          margin-left: -9%;
+          border-radius: 10px 10px 0px;
+      }
+      
+      .navclient .sidebar-client-toggle {
+          width: 4.5%;
+          height: 6.5vh;
+          margin-top: 0.3%;
+          padding: 0% 0% 3% 0%;
+          margin-left: 0%;
+          border: none;
+          outline: none;
+          font-size: 50%;
+          color: rgb(255, 255, 255);
+      }
+      
+      .navclient .sidebar-client-toggle:hover,
+      .navclient .sidebar-client-toggle:focus {
+          background: white;
+          color: #021e4e;
+      }
+      
+      .navclient ul {
+          display: flex;
+          list-style: none;
+          width: 40%;
+          height: 7vh;
+          padding-top: 0.5%;
+      }
+      
+      .navclient ul li {
+         
+          font-size: 10px;
+          margin-right: 5px;
+          width: 100%;
+          text-align: center;
+          border-radius: 10px;
+      }
+      
+      .navclient ul li:first-child {
+          margin-right: 2%;
+      }
+      
+      .navclient ul li:hover {
+          box-shadow: inset 0px 0px 20px 2px skyblue;
+          transition: all 0.5s ease-in-out;
+      }
+      
+      .navclient ul li a {
+          text-decoration: none;
+          color: white;
+          white-space: nowrap;
+          font-size: 12px;
+      }
+      
+      .navclient .searchbox {
+          display: none;
+          width: 2.0%;
+          height: 5.3vh;
+          margin-top: 0.85%;
+      }
+      
+      .navclient .searchbox input {
+          display: none;
+          width: 2.3%;
+          height: 5.3vh;
+          position: absolute;
+          border: none;
+          outline: none;
+          padding: 8px 10px 10px 40px;
+          color: #183a6e;
+          font-size: 16px;
+          border-radius: 50px;
+          background: none;
+          transition: all 0.4s;
+      }
+      
+      .navclient .searchbox button {
+          display: none;
+          position: absolute;
+          width: 2.4%;
+          font-size: 15px;
+          white-space: nowrap;
+          height: 5vh;
+          margin-top: 1px;
+          margin-left: 2px;
+          border: none;
+          outline: none;
+          border-radius: 50px;
+          color: #fff;
+          background: #ea0000;
+      }
+      
+      .navclient .searchbox .btn-fermer-recherche {
+          display: none;
+          position: absolute;
+          color: #ea0000;
+          font-size: 20px;
+          margin-left: 24.5%;
+          margin-top: 0.2%;
+          opacity: 0;
+          cursor: pointer;
+      }
+      
+      .navclient .searchbox:hover input,
+      .navclient .searchbox input:focus {
+          display: none;
+          width: 26.5%;
+          box-shadow: 0px 0px 0px 4px #1976d254;
+          background: #fff;
+      }
+      
+      .navclient .searchbox:hover button,
+      .navclient .searchbox:focus-within button {
+          background: #1976D2;
+          color: #fff;
+      }
+      
+      .navclient .searchbox:hover .btn-fermer-recherche {
+          opacity: 1;
+          transition: all 2s;
+      }
+      
+      .navclient .deconnect {
+          border: none;
+          outline: none;
+          font-size: 10px;
+          white-space: nowrap;
+          margin-top:1%; 
+          width: 100%;
+          height: 70%;
+          border-radius: 10px;
+          color: white;
+          background: #dd0c0c;
+          margin-left: 20%;
+      }
+      
+     .navclient .deconnect:hover {
+       
+          transition: all 0.5s ease-in-out;
+      }
+      
+      .profilclient-contenu {
+          margin-top: 4.8%;
+          display: flex;
+      }
+      
+      .profilclient-contenu .sidebar-client {
+          margin-top: 4.5%;
+          width: 60%;
+          max-width: 300px;
+          min-height: 92vh;
+          background: #021e4e66;
+          transition: margin .25s ease-out;
+          padding-top: 1%;
+      }
+      
+      .sidebar-client ul {
+          margin-top: 10px;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          margin-left: -13%;
+      }
+      
+      .sidebar-client ul li {
+          padding: 2% 0% 2% 2%;
+          height: 8vh;
+      }
+      
+      .sidebar-client ul li:hover {
+          background: #28c9ea;
+      }
+      
+      .sidebar-client ul li a {
+          color: white;
+          font-size: 12px;
+          text-decoration: none;
+      }
+      
+      .sidebar-client ul li:first-child a i {
+          margin-left: 36%;
+          margin-top: 0.3%;
+      }
+      
+      .sidebar-client ul li:nth-child(2) a i {
+          margin-left: 7%;
+      }
+      
+      .sidebar-client ul li:nth-child(3) a i {
+          margin-left: 56%;
+      }
+      
+      .sidebar-client ul li:nth-child(3) ul li:first-child a i {
+          margin-left: 7%;
+      }
+      
+      .sidebar-client ul li:nth-child(3) ul li:nth-child(2) a i {
+          margin-left: 45%;
+      }
+      
+      .sidebar-client ul li ul.sousmenu {
+          display: none;
+          background: none;
+          margin-top: 4%;
+          margin-left: -16%;
+          padding-left: 13%;
+      }
+      
+      .sidebar-client ul li ul.sousmenu li {
+          margin-left: -3%;
+          padding-left: 10%;
+      }
+      
+      .sidebar-client ul li.menu:hover ul.sousmenu {
+          display: block;
+          transition: all 2s ease-in-out;
+      }
+      
+      .profilclient.toggled .profilclient-contenu .sidebar-client {
+          margin-left: 0;
+      }
+      
+      .profilclient-contenu .contenu {
+         
+          width: 80%;
+          padding: 2%;
+      }
+      #logout-form{
+        margin-left:10%; 
+      }
